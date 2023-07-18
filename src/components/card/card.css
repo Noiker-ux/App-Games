@@ -1,0 +1,53 @@
+
+.cards_inner{
+    margin-left: 380px;
+ }
+ .card{
+    width: 325px;
+    border-radius: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    background: hsla(0, 0%, 17%, 0.356);
+    cursor: pointer;
+    transition: all 1.4s ease;
+ }
+ .card:hover{
+   transform: 
+ }
+ .card__info{
+    padding: 5px 10px 15px 10px;
+
+ }
+ .card__info-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+ }
+
+ .card__rating{
+    border-radius: 20%;
+    border: 1px solid;
+    padding: 5px;
+    font-family: fantasy, sans-serif;
+ }
+
+ .card__img-preview{
+    /* object-fit: cover; */
+    width: 100%;
+    height: 185px;
+ }
+
+ .normalRating{
+   color: yellow;
+ }
+ .goodRating{
+   color: green;
+ }
+ .badRating{
+   color: red;
+ }
+ .card__body{
+   margin-top: 8px;
+ }

@@ -1,0 +1,27 @@
+{
+  "name": "game-application",
+  "version": "1.0.0",
+  "description": "game app description",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "live-server",
+    "build": "rollup -c --watch"
+  },
+  "keywords": [
+    "GameApp"
+  ],
+  "author": "Noiker",
+  "license": "ISC",
+  "dependencies": {
+    "on-change": "^4.0.2",
+    "remixicon": "^3.4.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "eslint": "^8.45.0",
+    "live-server": "^1.2.2",
+    "rollup": "^3.26.2",
+    "rollup-plugin-import-css": "^3.3.1"
+  }
+}

@@ -1,0 +1,10 @@
+.genres{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+.genre{
+    background: #3d3e3f;
+    padding: 3px 8px;
+    border-radius: 11px;
+}
