@@ -1,0 +1,115 @@
+ export const navigationList = [
+    {
+        "items_group": [
+            {
+                "item_name": "Home",
+                "item_link": "#",
+                "item_icon": "<i class='fa fa-home' aria-hidden='true'></i>"
+            },
+            {
+                "item_name": "Explore",
+                "item_link": "#explore",
+                "item_icon": "<i class='ri-compass-3-line'></i>"
+            },
+            {
+                "item_name": "Reviews",
+                "item_link": "#review",
+                "item_icon": "<i class='ri-finder-fill'></i>"
+            },
+            {
+                "item_name": "Wishlist",
+                "item_link": "#wishlist",
+                "item_icon": "<i class='ri-folder-3-fill'></i>"
+            },
+            {
+                "item_name": "My library",
+                "item_link": "#my-library", 
+                "item_icon": "<i class='ri-gamepad-fill'></i>"
+            }
+        ]
+        
+    },
+    {
+        "title_group": "New Releases",
+        "items_group": [
+            {
+                "item_name": "Last 30 days",
+                "item_link": "#last-30-days",
+                "item_icon": "<i class='ri-star-fill'></i>"
+            },
+            {
+                "item_name": "This week",
+                "item_link": "#time--this-week",
+                "item_icon": "<i class='ri-fire-fill'></i>"
+            },
+            {
+                "item_name": "Next week",
+                "item_link": "#time--next-week",
+                "item_icon": "<i class='ri-arrow-right-circle-fill'></i>"
+            }
+            // {
+            //     "item_name": "Release calendar",
+            //     "item_link": "#release-calendar",
+            //     "item_icon": "<i class='ri-calendar-todo-fill'></i>"
+            // }
+        ]
+    },
+    {
+        "title_group": "Top",
+        "items_group": [
+            {
+                "item_name": "Best of the year",
+                "item_link": "#popular--now-year",
+                "item_icon": "<i class='ri-award-fill'></i>"
+            },
+            {
+                "item_name": "Popular in 2022",
+                "item_link": "#popular--prev-year",
+                "item_icon": "<i class='ri-bar-chart-fill'></i>"
+            },
+            {
+                "item_name": "All time top 250",
+                "item_link": "#all-time-top-250",
+                "item_icon": "<i class='fa fa-trophy' aria-hidden='true'></i>"
+            }
+        ]
+    },
+    {
+        "title_group": "Platforms",
+        "items_group": [
+            {
+                "item_name": "PC",
+                "item_link": "#platforms--4",
+                "item_icon": "<i class='ri-windows-fill'></i>"
+            },
+            {
+                "item_name": "PlayStation4",
+                "item_link": "#platforms--18",
+                "item_icon": "<i class='ri-playstation-line'></i>"
+            },
+            {
+                "item_name": "Xbox One",
+                "item_link": "#platforms--1",
+                "item_icon": "<i class='ri-xbox-fill'></i>"
+            }
+            ,
+            {
+                "item_name": "Nintendo Switch",
+                "item_link": "#platforms--7",
+                "item_icon": "<i class='ri-switch-line'></i>"
+            }
+            ,
+            {
+                "item_name": "IOS",
+                "item_link": "#platforms--3",
+                "item_icon": "<i class='fa fa-apple' aria-hidden='true'></i>"
+            }
+            ,
+            {
+                "item_name": "Android",
+                "item_link": "#platforms--21",
+                "item_icon": "<i class='fa fa-android' aria-hidden='true'></i>"
+            }
+        ]
+    }
+ ]

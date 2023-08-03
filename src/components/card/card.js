@@ -29,7 +29,6 @@ export class Card extends DIVComponent {
         this.element.innerHTML=``;
         this.element.classList.add('card');
         this.element.setAttribute('data-id',this.game.id)
-        console.log(this.game);
         let ratingMeta = this.ratingMetacritick();
         this.element.innerHTML=`
             <img src="${this.game.background_image}" alt="Preview image" class="card__img-preview">
@@ -43,6 +42,4 @@ export class Card extends DIVComponent {
         `;
         return this.element;
     }
-
-
 }

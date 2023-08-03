@@ -1,14 +1,14 @@
 import { AbstractView } from '../../common/AbstractView.js';
-import { Header } from '../../components/header/header.js'
-import { Sidebar } from '../../components/sidebar/sidebar.js'
 import { Main } from '../../components/main/main.js';
 import onChange  from 'on-change';
 
 export class mainView extends AbstractView{
-    constructor(appState){
+    constructor(appState,hash){
         super();
+        this.hash=hash;
         this.AppState = appState;
         this.AppState = onChange(this.AppState, this.UpdateHookAppState.bind(this))
+        this.state = onChange(this.state, this.loader.bind(this));
         this.settitle('Noiker GameApp');
     }
 
@@ -18,6 +18,14 @@ export class mainView extends AbstractView{
         }
     }
 
+
+    loader(path){
+        if (path=='loading'){
+            document.querySelector('main').innerHTML+=`<p>sdf</p>`
+        }  
+    }
+
+
     state = {
         list: [],
         loading: false,
@@ -25,26 +33,19 @@ export class mainView extends AbstractView{
         offset: 0
     }
 
+
     async render(){
-        this.app.innerHTML=``;
-        this.renderHeader();
-        this.renderSidebar();
-        await this.renderMain();
-        this.AppState.favorites.push('111');
-    }
-
-    renderHeader(){
-        const header = new Header(this.AppState).render();
-        this.app.prepend(header);
-    }
-
-    renderSidebar(){
-        const sidebar = new Sidebar().render();
-        this.app.append(sidebar);
-    }
-
-    async renderMain(){
-        const main = new Main().render();
+        this.state.loading=true;
+        const main = await new Main(this.hash).render();
         await this.app.append(main);
+        this.state.loading=false;
+    }
+
+    destroy(){
+        try {
+            document.getElementById('main').remove();
+        } catch(e){
+            console.error(`Не удается очистить main: ${e.message}`);
+        }
     }
 }
